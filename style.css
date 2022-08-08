@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #E5E5E5;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.disable {
+    text-decoration: line-through;
+}
+
+header {
+    background: #1D539E;
+    height: 28.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    color: #FFFFFF;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.125em;
+    text-align: center;
+    width: 32rem;
+}
+
+.priceCards {
+    display: flex;
+    justify-content: center;
+    gap: 1.125rem;
+    margin-top: -8rem;
+    flex-wrap: wrap;
+}
+
+.pricecard {
+    width: 22.187rem;
+    color: #828799;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+    border-radius: 8px;
+    padding: 1.875rem;
+}
+
+.pricecardEspecial {
+    width: 22.187rem;
+    color: #828799;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgb(142 150 185 / 25%);
+    border-radius: 8px;
+    transform: scale(1.05);
+}
+
+.especial {
+    padding: 0 1.825rem;
+}
+
+.pricecardEspecial .headerCardEspecial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #FFCC29;
+    border-top-left-radius: 8px;
+    height: 4.76rem;
+    border-top-right-radius: 8px;
+}
+
+.headerCardEspecial span {
+    background: #1D539E;
+    padding: 8px 24px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 40px;
+}
+
+.pricecard a, .pricecardEspecial a {
+    display: block;
+    border: 1px solid #1D539E;
+    text-align: center;
+    padding: 0.75rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #1D539E;
+    margin-bottom: 1.8rem;
+    margin-top: 2.6rem;
+    transition: 0.3s;
+}
+
+.pricecard a:hover {
+    background: #1d9e28;
+    color: #FFFFFF;
+    border: none;
+}
+
+.pricecardEspecial a {
+    background: #1D539E;
+    color: #FFFFFF;
+}
+
+.pricecardEspecial a:hover {
+    color: #FFFFFF;
+    background: #1d9e28;
+    border: none;
+}
+
+.pricecard .title, .pricecardEspecial .title {
+    font-size: 1.125em;
+    font-weight: bold;
+    color: #1E2338;
+    margin-bottom: 1.25rem;
+}
+
+.pricecardEspecial .title {
+    margin-bottom: 0;
+    color: #1D539E;
+}
+
+.price,
+.priceEspecial {
+    border-bottom: 1px solid #EEEEEE;
+    margin-bottom: 1.25rem;
+}
+
+.price p span,
+.priceEspecial p span {
+    font-weight: bold;
+    color: #1E2338;
+}
+
+.price p span strong,
+.priceEspecial p span {
+    font-size: 2.25em;
+}
+
+.price p:last-child,
+.pricecardEspecial p:last-child {
+    font-size: 0.875em;
+    margin-bottom: 1.25rem;
+}
